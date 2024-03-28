@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --dark-color: #0B1F3B;
+    --base-color: #2C7AED;
+    --base2-color: #4BC3CC;
+    --gradient-color: linear-gradient(to right, #2C7AED, #4BC3CC);
+    --gray-color: #44494F;
+    --grayWhite-color: #CED1D5;
+    --gradient-hover: linear-gradient(to right, #356fc7, #39bac4);
+
+    --logo-font:"Rubik Mono One", monospace;
+    --texto-font: "Roboto", sans-serif;
+}
+

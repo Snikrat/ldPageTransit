@@ -1,0 +1,130 @@
+@import url("src/styles/variables.css");
+@import url("src/styles/reset.css");
+
+.container {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-family: var(--font-texto);
+}
+
+.container__section {
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    background-color: var(--base-color);
+}
+
+.section__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.4em 1em 3.4em 1em;
+    gap: 1.2em;
+}
+
+.logo {
+    color: var(--secondary-color);
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    font-family: var(--logo-font)
+
+}
+
+.section__nav {
+    width: 100%;
+}
+
+.nav__list {
+    background-color: var(--secondary-color);
+    padding: 0.7em;
+    padding-left: 2em;
+    border-radius: 5px;
+    display: flex;
+    gap: 6em;
+}
+
+.nav__link {
+    list-style: none;
+    text-decoration: none;
+    color: var(--base-color);
+}
+
+.btn__comprar a {
+    list-style: none;
+    text-decoration: none;
+    padding: 1em 2em;
+    background-image: var(--gradient-color);
+    border-radius: 8px;
+    color: var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn__comprar a:hover {
+    background-image: var(--gradient-hover);
+}
+
+.section__destaque {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.destaque__texto {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    color: var(--secondary-color);
+    padding: 2.4em 1em 3.4em 1em;
+}
+
+.destaque__texto h3 {
+    font-size: 1em;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.destaque__texto h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.destaque__texto a {
+    list-style: none;
+    text-decoration: none;
+    padding: 1em 2em;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    color: var(--base2-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 6rem;
+    text-align: center;
+}
+
+.destaque__texto a:hover {
+    background-image: var(--grayWhite-color);
+    transform: scale(1.05);
+}
+
+.destaque__imagem {
+    grid-column: 2 / 3;
+    position: relative;
+}
+.img__externa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+}
+.img__interna{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
