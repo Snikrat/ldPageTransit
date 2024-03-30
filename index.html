@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Mono+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/fced8a54e7.js" crossorigin="anonymous"></script>
 
     <title>Transit</title>
 </head>
@@ -25,7 +26,7 @@
                 <nav class="section__nav">
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Sobre nós</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Sobre</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Produtos</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Extras</a></li>
                     </ul>
@@ -168,7 +169,7 @@
                     </a>
                     <a href="#" class="card-link">
                         <div class="card">
-                            <div class="card-content">
+                            <div id="activateHover" class="card-content">
                                 <div>
                                     <p>Para empresas em fase de crescimento que buscam expandir sua presença no mercado
                                         e
@@ -211,7 +212,142 @@
                 </div>
             </section>
         </div>
+        <section class="clientes">
+            <h2>Nossos Clientes</h2>
+            <div class="clientes__logo">
+                <div>
+                    <img src="./src/img/Company-01.png" alt="">
+                </div>
+                <div>
+                    <img src="./src/img/Company-02.png" alt="">
+                </div>
+                <div>
+                    <img src="./src/img/Company-03.png" alt="">
+                </div>
+                <div>
+                    <img src="./src/img/Company-04.png" alt="">
+                </div>
+                <div>
+                    <img src="./src/img/Company-05.png" alt="">
+                </div>
+            </div>
+        </section>
+        <div class="container__background">
+            <section class="newsletter">
+                <form class="newsletter__form" action="#" method="POST">
+                    <div>
+                        <h2>Assine nossa Newsletter</h2>
+                    </div>
+                    <div>
+                        <label for="nome"></label>
+                        <input type="text" id="nome" name="nome" placeholder="Nome">
+
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail">
+
+                        <input class="btnEnviar" type="submit" value="Enviar">
+                    </div>
+                    <div>
+                        <p>Seja o primeiro da fila a receber insights</p>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <section class="duvidas">
+            <div class="container__duvidas">
+                <h2>Dúvidas Frequentes</h2>
+                <div class="faq">
+                    <ul class="faq-list">
+                        <li class="faq-item">
+                            <div class="faq-question"><i class="fa-solid fa-caret-right"></i> Qual é a missão da nossa
+                                empresa?</div>
+                            <div class="faq-answer">Nossa missão é fornecer soluções inovadoras e personalizadas que
+                                ajudem nossos clientes a alcançar o sucesso em seus negócios. Estamos comprometidos em
+                                oferecer serviços de alta qualidade, orientados para o cliente e focados em resultados.
+                            </div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="faq-question"><i class="fa-solid fa-caret-right"></i> Quais setores ou tipos de
+                                empresas vocês atendem?</div>
+                            <div class="faq-answer">Atendemos uma ampla gama de setores e tipos de empresas, desde
+                                startups e pequenas empresas até grandes corporações. Nossos serviços são adaptados às
+                                necessidades específicas de cada cliente, independentemente do tamanho ou da indústria.
+                            </div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="faq-question"><i class="fa-solid fa-caret-right"></i> Como vocês determinam
+                                quais serviços são mais adequados para o meu
+                                negócio?
+
+                            </div>
+                            <div class="faq-answer">Antes de recomendar qualquer serviço, realizamos uma análise
+                                detalhada das necessidades e objetivos do seu negócio. Nossa equipe especializada
+                                trabalha em estreita colaboração com você para entender suas metas e desafios,
+                                garantindo que ofereçamos soluções personalizadas que atendam às suas necessidades
+                                específicas.</div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="faq-question"><i class="fa-solid fa-caret-right"></i> Vocês oferecem suporte
+                                pós-implantação para os serviços
+                                contratados?</div>
+                            <div class="faq-answer">Sim, oferecemos suporte contínuo após a implantação de nossos
+                                serviços. Nossa equipe está disponível para responder a quaisquer perguntas ou
+                                preocupações que você possa ter e garantir que você esteja satisfeito com os resultados.
+                                Estamos comprometidos em fornecer suporte excepcional ao cliente em todas as etapas do
+                                processo.</div>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    document.querySelectorAll('.faq-question').forEach(function (question) {
+                        question.addEventListener('click', function () {
+                            var answer = this.nextElementSibling;
+                            answer.classList.toggle('visible');
+                        });
+                    });
+                </script>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer__contato">
+                <a href=""><span>Transervice</span></a>
+                <div>
+                    <span>(00) 0000-0000</span>
+                    <span>contato@transervice.com</span>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <h3>Menu</h3>
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Produtos</a>
+                    <a href="#">Extras</a>
+                </div>
+            </div>
+            <div class="footer_social">
+                <h3>Social</h3>
+                <div>
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Linkedin</a>
+                </div>
+            </div>
+        </footer>
+        <footer class="footer__copy">
+            <div>
+                <a href="https://www.facebook.com/felippe.goncalves11"><img src="./src/img/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/feeh1_gs/"><img src="./src/img/instagram.png" alt=""></a>
+                <a href="https://twitter.com/Feeh1_gs"><img src="./src/img/Icon=Twitter.png" alt=""></a>
+            </div>
+            <p>&copy; 2021 Transervice Consulting. Todos os direitos reservados.</p>
+        </footer>
+
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>

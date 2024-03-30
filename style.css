@@ -216,15 +216,18 @@
 .info__icon {
     background-color: var(--base-color);
     padding: 0.8em;
+    width: 30px;
 }
 
 .info__icom {
     background-color: var(--base2-color);
     padding: 0.8em;
+    width: 30px;
 }
 
 .container__background {
     background-image: var(--gradient-color);
+    width: 100%;
 }
 
 .section__oportunidades {
@@ -304,6 +307,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 260px;
     height: 320px;
+    transition: transform 0.3s ease
 }
 
 .card-link {
@@ -349,7 +353,248 @@
     padding: 0.2em;
     border-radius: 50%;
     color: var(--secondary-color);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    background-color: var(--base-color);
+    color: var(--secondary-color);
+}
+
+.clientes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 15%;
+    gap: 4em;
+}
+
+.clientes h2 {
+    font-family: var(--logo-font);
+    font-size: 2em;
+}
+
+.clientes__logo {
+    display: flex;
+    flex-direction: row;
+    gap: 7em;
+}
+
+.newsletter {
+    align-items: center;
+    padding: 5em 15%;
+}
+
+.newsletter__form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+}
+
+.newsletter__form div h2 {
+    font-family: var(--logo-font);
+}
+
+.newsletter__form input {
+    padding: 0.8em;
+    border-radius: 5px;
+    border: none;
+    width: 10rem;
+}
+
+.btnEnviar {
+    background-color: var(--grayWhite-color);
+    border-radius: 8px;
+    color: var(--dark-color);
+    font-family: var(--logo-font);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.btnEnviar:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+    background-color: var(--base-color);
+}
+
+input[type="text"],
+input[type="email"] {
+    border: 2px solid #ccc; 
+    border-radius: 5px; 
+    padding: 8px; 
+    outline: none; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #007bff; 
+}
+
+.duvidas {
+    padding: 5em 15%;
+}
+
+.container__duvidas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.container__duvidas h2 {
+    font-family: var(--logo-font);
+    font-size: 2em;
+    color: var(--dark-color);
+}
+
+.faq {
+    max-width: 700px;
+    background-image: var(--gradient-color);
+    padding: 5em 8em;
+    border-radius: 15px;
+    color: var(--secondary-color);
+}
+
+.faq-list {
+    list-style: none;
+    padding: 0;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.faq-answer {
+    display: none;
+    color: var(--grayWhite-color);
+    margin-left: 2em;
+}
+
+.faq-answer.visible {
+    display: block;
+    margin-top: 10px;
+}
+
+.footer {
+    display: flex;
+    padding: 5em 15%;
+    justify-content: space-between;
+    gap: 10em;
+    border-top: 1px solid var(--grayWhite-color);
+    border-bottom: 1px solid var(--grayWhite-color);
+}
+
+.footer__contato {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer__contato a {
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.footer__contato a span {
+    font-family: var(--logo-font);
+    color: var(--gradient-color);
+}
+
+.footer__contato div span {
+    color: var(--dark-color);
+}
+
+.footer__contato div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer__menu h3 {
+    font-family: var(--logo-font);
+    color: var(--dark-color);
 
 }
 
+.footer__menu div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
 
+.footer__menu div a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.footer__menu div a:hover {
+    color: var(--base-color);
+}
+
+
+.footer_social {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer_social h3 {
+    font-family: var(--logo-font);
+    color: var(--dark-color);
+}
+
+.footer_social div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.footer_social div a {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.footer_social div a:hover {
+    color: var(--base-color);
+}
+
+.footer__copy {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__copy div {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__copy div a {
+    background-color: #007bff;
+    border-radius: 50%;
+    padding: 10px;
+    align-items: center;
+
+}
